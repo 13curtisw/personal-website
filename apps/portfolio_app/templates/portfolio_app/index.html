@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Curtis Wang's Website</title>
+		<meta name="description" content="Curtis Wang is an undergrad studying at the University of Washington, working on his B.S in Physics. He is also an experienced full stack developer, having disciplines in many different programming languages.">
+		{% load staticfiles %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{% static 'css/portfolio_app/styles.css' %}">
+		<script src="{% static 'js/portfolio_app/parallax.js' %}"></script>
+		<script src="{% static 'js/portfolio_app/jquery.waypoints.min.js' %}"></script>
+		<script src="{% static 'js/portfolio_app/script.js' %}"></script>
+	</head>
+	<body>
+		<div class="parallax-window container-fluid" data-parallax="scroll" data-image-src="{% static 'res/portfolio_app/background.jpg' %}" data-speed="0.1">
+			<div class="header row col-xs-12">
+				<div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+					<h2>Curtis Wang</h2>
+				</div>
+				<table class="col-lg-7 col-md-4 col-sm-4 col-xs-12 col-lg-offset-2 col-md-offset-3">
+					<tr>
+						<td class="active col-lg-1 col-md-1 col-sm-1 col-xs-3" bookmark="#about"><a>ABOUT ME</a></td>
+						<td class="col-lg-2 col-md-1 col-sm-1 col-xs-3" bookmark="#gallery"><a>PROJECT GALLERY</a></td>
+						<td class="col-lg-1 col-md-1 col-sm-1 col-xs-3" bookmark="#resume"><a>RESUME</a></td>
+						<td class="col-lg-1 col-md-1 col-sm-1 col-xs-3" bookmark="#contact"><a>CONTACT</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="main">
+				<div id="about" class="section">
+					<h1>Hello!</h1>
+					<p>
+						My name is Curtis Wang and I am an undergrad studying at the University of Washington. Go Huskies! I plan to graduate with my Bachelors in Physics in June of 2017. I also am an experienced full stack developer. Through my education and hands on training at CodingBootcamp as well as my experience working as a front end web developer intern at PrettyBooks Seattle, I have developed a strong base in software development (Not to mention the Hack-a-thons I regularly take part in or the various Computer Science classes I take at UW). 
+					</p>
+					<p>
+						I am passionate about my work and I always strive to push myself to the best of my ability. I have a Creative mind and enjoy developing meaningful content. Friendly. Good communicator. Proactive.
+					</p>
+					<p>
+						My interests include coding, dance, music and videogames
+					</p>
+					<p>
+						Feel free to take a look around my website and dont hesitate to contact me! :)
+					</p>
+
+				</div>
+				<div class="hr">
+					<i class="fa fa-sort-desc fa-3x" aria-hidden="true"></i>
+				</div>
+				<div id="gallery" class="section">
+					<h1>Project Gallery</h1>
+					<p>Here are some of my favorite projects I've worked on!</p>
+					<div class="project" id="poker" onclick="location.href='https://github.com/13curtisw/texasholdem';"></div>
+					<div class="project" id="game" onclick="location.href='https://github.com/13curtisw/1942';"></div>
+					<div class="project" id="wordstream" onclick="location.href='https://github.com/13curtisw/wordstream';"></div>
+					<div class="project" id="beatbud" onclick="location.href='https://github.com/13curtisw/beatbud';"></div>
+					<div class="project" id="accordance" onclick="location.href='https://github.com/13curtisw/accordance_wire_frame';"></div>
+					<div class="project" id="ninja" onclick="location.href='https://github.com/13curtisw/ninja_arena';"></div>
+					<div class="project" id="puzzler" onclick="location.href='https://github.com/13curtisw/puzzler';"></div>
+					<div class="project" id="beast" onclick="location.href='https://github.com/13curtisw/beastlist';"></div>
+				</div>
+				<div class="hr">
+					<i class="fa fa-sort-desc fa-3x" aria-hidden="true"></i>
+				</div>
+				<div id="resume" class="section">
+					<h1>Resume</h1>
+					<p>Visit this link to view my resume!</p>
+					<p><a href="https://docs.google.com/document/d/1MvNUnmRb10g1HMzb1zKDE8a_xSViS1cBL7jSLIXPheY/edit?usp=sharing">https://docs.google.com/document/d/1MvNUnmRb10g1HMzb1zKDE8a_xSViS1cBL7jSLIXPheY/edit?usp=sharing</a></p>
+				</div>
+				<div class="hr">
+					<i class="fa fa-sort-desc fa-3x" aria-hidden="true"></i>
+				</div>
+				<div id="contact" class="section">
+					<h1>Contact</h1>
+					<p>Phone Number: 425-894-2069</p>
+					<p>Email: curtiswang@hotmail.com</p>
+					<p>LinkedIn: https://www.linkedin.com/in/wangcurtis</p>
+					<p>Facebook: https://www.facebook.com/curtisrwang</p>
+					<p>GitHub: https://github.com/13curtisw</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
